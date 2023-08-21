@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #1e272e;
+}
+
+.waves {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  //background-color: red;
+  transform-style: preserve-3d;
+  transform: perspective(800px)rotateX(60deg);
+}
+
+.waves div {
+  position: absolute;
+  display: block;
+  border: 10px solid #fff;
+  box-shadow: 0 8px 0 #ccc;
+  border-radius: 50%;
+
+  animation: wave 3s ease-in-out infinite;
+
+  top: calc(var(--i)*10px) ;bottom:calc(var(--i)*10px) ;left:calc(var(--i)*10px) ;right:calc(var(--i)*10px);
+  animation-delay: calc(var(--i)*0.1s);
+}
+
+@keyframes wave {
+
+  0%,
+  100% {
+    transform: translateZ(-120px);
+  }
+
+  50% {
+    transform: translateZ(120px);
+  }
+}
