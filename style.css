@@ -22,7 +22,7 @@ body {
 .waves div {
   position: absolute;
   display: block;
-  border: 10px solid #fff;
+  border: 10px solid white;
   box-shadow: 0 8px 0 #ccc;
   border-radius: 50%;
 
