@@ -43,7 +43,7 @@ body {
     transform: translateZ(120px);
   }
 }
-@media(max-width:400px){
+@media(max-width:550px){
   .waves{
     width:100%;
   }
