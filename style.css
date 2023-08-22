@@ -15,7 +15,6 @@ body {
   position: relative;
   width: 500px;
   height: 500px;
-  //background-color: red;
   transform-style: preserve-3d;
   transform: perspective(800px)rotateX(60deg);
 }
